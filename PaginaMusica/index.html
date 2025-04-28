@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica para estudiar</title>
+    <meta name="theme-color" content="#aeea00">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./img2/Logo.png">
+    <link rel="apple-touch-icon" href="./Logo.png">
+    <link rel="apple-touch-startup-image" href="./Logo.png">
+    <link rel="manifest" href="./manifest.json">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="Header">
+        <h1>Música para estudiar</h1>
+        <img src="./img/Logo.png" alt="#Logo Musica para estudiar">
+        <p>Bienvenidos a Musica pra estudiar una serie de videos musicales para concentrarte y 
+            prepararte para la hora de hacer la tarea
+        </p>
+        <nav>
+            <a href="http://www.youtube.com/" target="_blank" title="Youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="http://www.facebook.com/" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="http://www.instagram.com/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </nav>
+    </header>
+    <main class="Main">
+        <iframe width="916" height="515" src="https://www.youtube.com/embed/VzmtIUmjkTo" title="Música para Estudiar, Trabajar e Inspirarse ☯ Música para Mejorar la Concentración" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+</body>
+
+<script>
+    if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('Registro con éxito', reg))
+        .catch(err => console.warn('Error al registrar el Service Worker', err));
+    }
+</script>
+</html>
